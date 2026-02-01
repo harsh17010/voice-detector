@@ -4,7 +4,9 @@ import librosa
 import numpy as np
 import torch
 
-API_KEY = "mysecretkey"
+Aimport os
+API_KEY = os.getenv("API_KEY")
+
 
 app = FastAPI()
 
